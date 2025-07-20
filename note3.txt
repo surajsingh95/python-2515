@@ -1,0 +1,825 @@
+Version Control System - VCS
+Version control / Revision control / Source control is a system that helps to keep track of changes made to a file or a set of files (computer programs, web site files, documents etc) over time.
+ CORE PYTHON
+
+30 June 2025
+Introduction To Python
+What is Programming or Programming Language ?
+
+Simple - Programming or Programming Language is a way to "instruct the computer to perform tasks"
+
+
+Programming Paradigms
+Paradigms - pronounced as para - dime
+
+
+Programming paradigms refer to the styles and approaches for designing and structuring computer programs. 
+
+
+ 
+There are several Programming paradigms available, but the two most common paradigms are imperative and declarative,  
+https://en.wikipedia.org/wiki/Programming_paradigm
+Imperative Paradigm
+The imperative paradigm is a programming style that focuses on describing how a program operates. The emphasis is on how to do something.
+
+Key Concept: Explicitly define the steps needed to achieve the desired outcome.
+
+
+Languages: Python, Java, C (when using loops and variables) etc
+
+
+Declarative Paradigm
+The declarative paradigm focuses on what to do, rather than how to do it. The programmer specifies the desired result, and the language or system takes care of how to get there.
+
+Key Concept: Focus on the what rather than the how.
+
+
+Languages: SQL, HTML, CSS etc 
+
+
+
+
+
+
+
+Imperative vs Declarative
+
+High-Level vs. Low-Level Languages
+
+
+NOTE: Python is a High-Level Programming Language.
+1 July 2025
+
+
+
+
+
+
+
+2 July 2025
+
+Installation of Python 
+To start working with Python, you need to install the Python interpreter, which allows you to run Python code on your system.
+
+Python Interpreter: The core component that executes Python code.
+
+Steps to Install Python
+
+To check Python is installed or not, open Command Prompt (CMD) and type below command
+python --version
+
+
+
+1. Download Python
+Visit the official Python website: https://www.python.org/ 
+
+
+Download the latest version of Python https://www.python.org/downloads/ 
+2. Install Python
+Windows:
+Run the downloaded installer.
+Check the box that says "Add Python to PATH" (this makes Python accessible from the command line).
+Click Install Now.
+
+
+
+
+macOS:
+Run the downloaded .pkg file.
+Follow the installation prompts.
+Linux:
+Most Linux distributions come with Python pre-installed.
+
+3. Verify Installation
+Open a terminal or command prompt and type:
+python --version
+
+
+
+
+NOTE: If it still shows, error, close and open command prompt again and try.
+
+IDE 
+An IDE (Integrated Development Environment) is a computer program that helps programmers write computer code to create software. 
+
+
+An IDE normally consists of at least a source code editor, debugger, Syntax highlighting, intelligent code completion, build automation tools etc. 
+VS Code 
+Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft for Windows, Linux and macOS. 
+
+Features include support for debugging, syntax highlighting, intelligent code completion, code refactoring and embedded Git.
+
+https://code.visualstudio.com/
+
+
+Keywords
+
+Keywords in Python are predefined reserved words that have special meaning to the Python interpreter. 
+
+NOTE: In simple words you can say, keywords are those words whose functionality is already defined.
+
+You cannot use keywords as variable names, function names because they are part of the language syntax.
+Total 35 keywords.
+https://docs.python.org/3/reference/lexical_analysis.html#keywords
+
+> cat keywords_demo.py
+import keyword
+print(keyword.kwlist)
+
+
+
+
+3 July 2025
+
+Version Control System - VCS
+Version control / Revision control / Source control is a system that helps to keep track of changes made to a file or a set of files (computer programs, web site files, documents etc) over time.
+
+
+Git
+We use GIT to keep track of changes made to files in laptops. 
+GitHub
+We use GITHUB to store code from all the developers in the project in a centralized place. 
+
+
+
+
+Our Class Work
+
+https://github.com/ravi2krishna/python-2515.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8 July 2025
+
+
+
+
+
+
+
+
+9 July 2025
+PROJECT - LMS Application 
+What is an LMS (Learning Management System) 
+
+A Learning Management System (LMS) is software that helps educators create, deliver, and manage online courses and training programs. Think of it as a digital classroom where you can:
+Access course materials (lectures, videos, readings).
+Submit assignments and take quizzes/exams.
+Track your progress, grades, and deadlines.
+Communicate with instructors and classmates (discussions, messages).
+Participate in interactive activities (forums, group projects).
+Example: Your institute uses an LMS to share lessons, collect homework, and post grades—all in one place, accessible from anywhere! 🎓💻
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Scenario 1 : Basic Student Information
+In an LMS, you might need to store information about students, such as their ID, name, age, and scores. You can use variables and different data types to store this data, and then use operators to manipulate and compare it.
+In this project, you will simulate a simple system that stores and processes a student’s academic and attendance details. 
+
+Declare variables to store student information like:
+Student ID 
+Student Name 
+Student Age 
+Quiz Score
+Assignment Score
+Exam Score
+Student Attendance
+
+
+Use arithmetic operators to calculate:
+Total score
+Average score
+
+
+Use relational operators to determine:
+If the student is passing based on average score 75
+
+
+Use increment operator to update:
+Attendance (simulate an additional attended session)
+
+
+Use logical operators to determine award eligibility:
+If the student qualifies for an award (requires high attendance i.e 90 and above and a passing grade)
+
+
+Display results
+Student Information Section: ID, Name, Age
+Academic Performance Section: Individual scores, total, and average
+Status Section: Passing status and award eligibility
+
+
+
+
+
+
+
+11 July 2025
+
+Type Conversion & Type Casting
+In Python, type conversion and type casting are used to convert values from one data type to another. 
+
+There are two types of type conversion in Python:
+Implicit Type Conversion (Automatic)
+Explicit Type Conversion (Type Casting) (Manual)
+Implicit Type Conversion:
+Python automatically converts one data type to another when needed (usually from lower to higher types), without losing data.
+Widening Conversion (Implicit): Conversion from smaller to larger data types.
+
+
+a = 10      # Integer
+b = 3.5     # Float
+c = a + b   # Python converts 'a' to float automatically
+print(c)    # Output: 13.5
+print(type(c))  # Output: <class 'float'>
+
+✅ No data loss occurs because Python promotes int to float automatically.
+
+
+Narrowing Conversion (Explicit): Conversion from larger to smaller data types, which may result in a loss of precision or truncation of data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Common Type Conversion Functions:
+Function
+Description
+Example
+int()
+Converts to integer
+int(3.14) → 3
+float()
+Converts to float
+float(10) → 10.0
+str()
+Converts to string
+str(100) → "100"
+list()
+Converts to list
+list("hello") → ['h', 'e', 'l', 'l', 'o']
+tuple()
+Converts to tuple
+tuple([1, 2, 3]) → (1, 2, 3)
+set()
+Converts to set
+set([1, 2, 2, 3]) → {1, 2, 3}
+bool()
+Converts to boolean
+bool(0) → False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Python Indentation
+Indentation in Python refers to the spaces at the beginning of a line that define code blocks (like conditionals, loops, functions, etc.).
+Unlike other programming languages (like Java, C, or C++), Python uses indentation instead of curly braces {} to define blocks of code.
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+
+💡 Key Rules About Indentation:
+Use either spaces or tabs, but not both. (Recommended: 4 spaces)
+All lines in the same block must have the same indentation level.
+Improper indentation = SyntaxError
+
+❌ Example: Incorrect Indentation (Will Cause an Error)
+> cat example
+if True:
+print("Missing indentation")
+
+IndentationError: expected an indented block
+
+> cat example
+if 5 > 2:
+print("Five is greater than two!")
+
+IndentationError: IndentationError: expected an indented block
+
+NOTE: Python will give you an error if you skip the indentation:
+
+
+NOTE: The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.
+
+
+> cat example
+if True:
+    print("Correct indentation")
+
+NOTE: Python will give NO ERROR 
+
+> cat example
+
+
+if 5 > 2:
+   print("Five is greater than two!")
+
+NOTE: Python will give NO ERROR 
+
+
+> cat example
+
+NOTE: You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
+
+
+if 5 > 2:
+   print("Five is greater than two!")
+ print("It Will Not Work!")  # No proper indentation added an space
+
+IndentationError: unindent does not match any outer indentation level
+
+
+> cat example
+
+
+if 5 > 2:
+   print("Five is greater than two!")
+   print("It Will Work Now!")  # Proper indentation
+
+NOTE: Python will give NO ERROR 
+
+
+
+
+
+
+
+
+
+
+
+
+12 July 2025
+Conditional Statements 
+Conditional Statements are used to make decisions in your code, by evaluating a condition (usually a Boolean expression) and execute different blocks of code based on whether the condition is true or false.
+
+Types of Conditional Statements in Python
+if statement: Runs a block of code if the condition is true.
+if-else statement: Runs one block of code if the condition is true, and another block of code if it’s false.
+elif ladder: Allows checking multiple conditions in sequence.
+match-case statement: An alternative to if-else when you have multiple possible conditions for a single variable. It matches a value against multiple patterns.
+NOTE: Python uses indentation to indicate a block of code.
+💡 Key Rules About Indentation:
+Use either spaces or tabs, but not both. (Recommended: 4 spaces)
+All lines in the same block must have the same indentation level.
+Improper indentation = SyntaxError
+
+
+
+
+
+if statement
+if statement: Executes a block of code if the condition is true.
+
+Syntax 
+
+
+if condition:
+    statements
+
+Example 
+> cat example
+// Check Number is Positive
+
+num = 10
+if num > 0:
+   print("The Number is positive")
+
+NOTE: Changing the number to negative value
+> cat example
+// Check Number is Positive
+
+num = -10
+if num > 0:
+   print("The Number is positive")
+
+
+
+
+
+
+if-else statement
+if-else statement: Runs one block of code if the condition is true, and another block of code if condition is false.
+
+Only one of the code blocks will be executed (either the if block or the else block), depending on the condition.
+
+Syntax 
+
+
+if condition:
+    statements
+else:
+    statements
+
+Example
+> cat example
+num = 10
+if num > 0:
+    print("num is positive")
+else:
+    print("num is negative")   
+
+> cat example
+age = 20
+if age >= 18:
+    print("You Can Vote")
+else:
+    print("You Cannot Vote")     
+
+NOTE: To make our python programs more interactive, we can use the inbuilt input() function.
+input() in Python
+In Python, the input() function is used to take user input from the keyboard as a string. It allows programs to interact with users by reading their inputs, good for console based programs.
+✅ Syntax:
+variable = input("Enter something: ")
+
+> cat example
+name = input("Enter Your Name: ")
+print(f"Hello {name}")
+
+
+> cat example
+name = input("Enter Your Name: ")
+print(f"Hello {name}")
+age = input("Enter Your Age: ")
+print(f"Hello {name} you are {age} years old")
+
+
+> cat example
+// Check Can Vote or not → Will get ERROR
+age = input("Enter Your Age: ")
+if age >= 18:
+   print("You Can Vote")
+else:
+   print("You Cannot Vote") 
+
+NOTE:  input() always returns a string. If you want a number, you must convert it. 
+
+
+> cat example
+// Check Can Vote or not → ERROR fixed
+
+
+age = int(input("Enter Your Age: "))
+if age >= 18:
+   print("You Can Vote")
+else:
+   print("You Cannot Vote") 
+
+
+Ternary Operator 
+The ternary operator in Python, also known as the conditional operator, allows you to write if-else statements in a concise/shorthand form.
+
+NOTE: Allows only a single expression, not multiple statements.
+
+It’s often used to assign a value to a variable based on a condition.
+value_if_true if condition else value_if_false
+
+> cat example
+// ternary operator
+# value_if_true if condition else value_if_false
+age = int(input("Enter Your Age: "))
+status = "You Can Vote" if age >= 18 else "You Cannot Vote"
+print(status)  # Output: Adult
+
+The ternary operator is useful for:
+Shortening simple if-else statements.
+Making code cleaner and more readable in cases where you only need to choose between two values.
+elif ladder statement
+elif  ladder: Allows multiple conditions to be checked in sequence.
+Syntax 
+
+if condition:
+    statements
+elif condition:
+    statements
+else:
+    statements
+
+If none of the conditions are true, the code block within the else statement is executed.
+
+> cat example
+
+
+x = 0
+if x > 0:
+   print("Positive")
+elif x < 0:
+   print("Negative")
+else:
+   print("Zero")
+
+> cat example
+
+
+marks = 85
+if marks >= 90:
+   print("Grade A")
+elif marks >= 75:
+   print("Grade B")
+elif marks >= 50:
+   print("Grade C")   
+else:
+   print("FAIL")
+
+14 July 2025
+match-case (Modern Switch Statement)
+Python 3.10 introduced a match-case statement — similar to switch like in Java or C++.
+It provides an alternative to using multiple if-else if statements when comparing against multiple possible values. 
+
+✅ Use this only if you're using Python 3.10 or later.
+
+Syntax 
+
+choice = 2
+
+
+match choice:
+   case 1:
+       print("One")
+   case 2:
+       print("Two")
+   case _:
+       print("I
+
+
+
+Scenario 2 : Tuition Discount Calculation in Python
+Task Requirements:
+Variables:
+Get user input for the following information:
+Student's name 
+Student's grade level (1-12) 
+Base tuition fee 
+Discount percentage 20% 
+Academic Topper status (e.g., whether the student is an academic topper or not)
+Input Validation
+Implement input validation using conditional statements
+Check if grade is between 1-12
+Display appropriate error message for invalid grades
+Process discount calculation only for valid input
+Conditional Statements for Discount Calculation:
+Use Conditional statements to determine the discount based on the following rules:
+For students in grades 9 to 12:
+If they are academic toppers, apply a 20% discount.
+Otherwise, apply a 10% discount.
+For students in grades 6 to 8, apply a 5% discount.
+For grades below 6, apply no discount.
+
+
+Implement match-case Statement for Additional Discounts:
+Implement a match-case statement to apply additional discounts:
+For grade 10, add an additional 3% discount.
+For grade 12, add an additional 5% discount.
+No additional discounts for other grades.
+Calculation:
+Calculate the final tuition fee after applying the discount:
+Calculate discount amount
+Calculate final fee
+Output:
+Display a detailed summary including
+Student name
+Grade level
+Academic topper status (Yes/No)
+Base tuition fee
+Total discount percentage
+Discount amount saved
+Final tuition fee after discount
+
+
+
+
+
+
+
+Sample Output Format
+===== LMS Fee Discount Calculator =====
+Processing discount for John Doe...
+Academic Topper Discount Applied!
+Grade 10 Bonus Discount Added!
+
+----- Tuition Discount Summary -----
+Student Name: John Doe
+Student Grade: 10
+Academic Topper: Yes
+Base Tuition Fee: ₹10000.0
+Total Discount: 23.0%
+Discount Amount: ₹2300.0
+Tuition Fee After Discount: ₹7700.0
+-----------------------------------
+Excellent! Maximum discount achieved!
+
+
+
+
+
+
+
+
+
+CRM TASK 
+
+CRM Task: Customer Discount Calculation
+Objective: Create a Python program to calculate discounts for customers based on their type, partnership duration, and deal stage using variables, conditionals, operators, and a case match statement.
+Task Requirements
+Variables:
+customerId 
+customerName 
+isPremium (boolean – true for premium customers)
+yearsPartnership 
+dealStage (String – "Proposal", "Negotiation", "Closed")
+dealValue ( original value of the deal)
+Conditional Statements:
+Apply a base discount based on customer type and partnership years:
+Premium customers: 10% discount.
+Non-premium with ≥3 years partnership: 5% discount.
+Others: 0% discount.
+case match Statement:
+Add an extra discount based on dealStage:
+"Proposal": +2%
+"Negotiation": +3%
+"Closed": +5%
+Calculation:
+Calculate the final discount and discounted deal value.
+Output:
+Print customer details, base discount, extra discount, total discount, and final deal value.
+16 July 2025
+Loops
+Loops are used to execute a block of code repeatedly based on a condition 
+When to use: To perform repetitive tasks in your program or for automating repetitive tasks
+Types of Loops in Python
+
+while loop: Runs a block of code as long as the specified condition is true.
+for loop: Used to iterate over a sequence (like a list, string, tuple, range, etc.)
+while Loop:
+The while Loop: Repeats code as long as a condition is true.
+
+
+Syntax 
+while condition:
+    # Code to repeat
+
+
+
+
+
+for Loop:
+The for Loop: Used to iterate over a sequence (like a list, string, tuple, range, etc.) 
+Single Numbers Not allowed like 24, 3.5 etc
+
+
+Syntax 
+for elements in sequence:
+   # statements
+
+🔁 Branching / Jump / Loop Control Statements
+
+Loop Control Statements is nothing but controlling the flow of iteration inside the loops.
+
+✅ 1. break
+Purpose: Exits the loop immediately, even if the condition hasn’t finished.
+> cat example
+// When i becomes 3, loop ends
+
+
+for i in range(5):
+   if i == 3:
+       break  # loop stops here
+   print(i)
+
+➡ When i becomes 3, break is executed, and the loop ends.
+✅ 2. continue
+Purpose: Skips the current iteration and moves to the next one.
+> cat example
+// When i becomes 3, loop should skip only at that iteration 
+
+
+for i in range(5):
+   if i == 3:
+       continue  # skip this iteration
+   print(i)
+
+ ➡ When i is 3, continue skips printing it and continues with the next number.
+
+
+
+✅ 3. pass
+pass 
+In Python, the pass statement is a placeholder that does nothing when executed. It's used when a statement is required syntactically but you don’t want to perform any action.
+✅ Why use pass?
+Python does not allow empty blocks, so:
+if condition:
+   # do nothing (this will cause an IndentationError!)
+
+To fix that, you use pass:
+if condition:
+   pass  # Placeholder for future code
+TASK: OTP Verification System
+You are building a simple OTP (One-Time Password) verification system. The user will be asked to enter a 4-digit OTP. They will be given 3 attempts to enter the correct OTP.
+Assume the correct OTP is already stored in a variable.
+Ask the user to input a 4-digit OTP.
+If the OTP entered is not 4 digits, display
+OTP Must be 4 digit number only
+If the OTP is correct, display:
+Correct OTP - Success
+If the OTP is incorrect, decrease the attempts count.
+After 3 incorrect attempts, display
+Maximum attempts done, try after 24 Hours
+
+TASK  : Student Grade Tracker
+Create a comprehensive Python program and develop a simple console-based application that tracks student grades for multiple subjects using loops, variables, data types, operators, type conversion, conditionals, and input functions. This task demonstrates how loops solve real-world problems where the quantity of data is unknown beforehand.
+Collect Student Information:
+Student ID 
+Student Name 
+Attendance 
+Number of subjects
+Total Score 
+Continue input
+Input Subject Scores:
+Repeatedly ask the user to enter scores for multiple subjects.
+Accepts "yes" or "Yes" as continuation options
+Add each entered score to the total score and increment the number of subjects.
+Continuation prompt: Ask the user if they want to enter another score after each entry (allowing them to continue or stop inputting scores).
+
+Calculate Average Score:
+Calculate the average score for the student after all scores are entered.
+
+
+Determine Performance Level:
+Use conditional statements to determine performance based on the average score:
+85 and above → "Excellent"
+70 to 84 → "Good"
+50 to 69 → "Average"
+Below 50 → "Needs Improvement"
+Check Attendance Status:
+Use a conditional statement to check if attendance is less than 75%. If so, print a WARNING Low Attendance, else OK Attendance Satisfied
+
+Display Final Results:
+Print out the student’s ID, name, total score, average score, performance level, and attendance with appropriate messages.
+
+SOLUTION - LINK 
+18 July 2025
+
+
+
+https://i.sstatic.net/nXjjm.png 
+
+Example startswith
+// check if number starts with correct country code or not 
+
+
+
+
+
+
+
